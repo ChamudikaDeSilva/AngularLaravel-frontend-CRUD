@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">CRUD</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <form (ngSubmit)="updateEmployee()">
+        <div class="form-group">
+            <label for="name">Enter Name</label>
+            <input type="text" name="name" class="form-control" [(ngModel)]="employee.name">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="name">Enter Email</label>
+            <input type="text" name="email" class="form-control" [(ngModel)]="employee.email">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="name">Enter Password</label>
+          <input type="password" name="password" class="form-control" [(ngModel)]="employee.password">
+        </div>
+        <br>
+        <button class="btn btn-primary btn-sm mt-4">Update</button>
+
+      </form>
+    </div>
+  </div>
+</div>
